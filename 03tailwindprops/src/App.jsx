@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import Card from "./components/Card";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const nikeShoes1 = {
+    name: "Nike Air Max Dn",
+    description:
+      "The Air Max Dn features our Dynamic Air unit system of dual-pressure tubes, creating a reactive sensation with every step.",
+    path: "../src/assets/nike-air-max-dn.jpg",
+  };
+
+  const nikeShoes2 = {
+    name: "Nike InfinityRN 4",
+    description:
+      "Nike shoes feature ReactX foam for comfort and a snug collar for stability, ensuring smooth transitions, reducing fatigue.",
+    path: "../src/assets/nike-infinityrn-4.jpg",
+  };
+
+  const nikeShoes3 = {
+    name: "Nike Pegasus 39",
+    description:
+      "Let the Nike Pegasus 39, a balanced and energized ride for any run, help you ascend to new heights.",
+    path: "../src/assets/nike-pegasus-39.jpg",
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="ms-5">
+        <h1 className="text-5xl font-bold mb-10 mt-3 text-center">
+          Tailwind CSS and Props
+        </h1>
+        <div className="grid grid-cols-3">
+          <Card shoe={nikeShoes1}/>
+          <Card shoe={nikeShoes2}/>
+          <Card shoe={nikeShoes3}/>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
