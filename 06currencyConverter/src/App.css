@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-bg-img {
+  background-image: url(assets/digitalCurrency.jpg);
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+.main-bg-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(20, 12, 0);
+  opacity: 0.6;
+}
