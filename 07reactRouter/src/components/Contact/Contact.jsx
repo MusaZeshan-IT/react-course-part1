@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div className="relative flex items-top justify-center min-h-[700px] bg-white sm:items-center sm:pt-0">
+        <div className="relative flex items-top justify-center min-h-[550px] mb-10 bg-white sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2">
@@ -13,7 +13,6 @@ export default function Contact() {
                             <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
                                 Fill in the form to start a conversation
                             </p>
-
                             <div className="flex items-center mt-8 text-gray-600">
                                 <svg
                                     fill="none"

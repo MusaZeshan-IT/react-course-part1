@@ -16,13 +16,13 @@ export default function About() {
                             React development is carried out by passionate developers
                         </h2>
                         <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                            React development is characterized by a community of dedicated and enthusiastic
+                            developers. These individuals bring a wealth of creativity and expertise to their
+                            projects, ensuring that applications are both functional and innovative.
                         </p>
                         <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                            This collective effort creates powerful and dynamic applications that redefine the
+                            limits of web technology, turning ideas into extraordinary digital experiences.
                         </p>
                     </div>
                 </div>
